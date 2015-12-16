@@ -21,7 +21,7 @@ ON p.ProductID = r.OrderID, p.ProductID = d.ProductID
 Lalu kita lakukan perubahan data berdasarkan handling case seperti diatas
 UPDATE  d.HargaPax SET d.HargaPax * 10% 
 FROM D2NPackage
-WHERE d.SchemaID='SD002' && r.OrderDate= 25, 26, 31
+WHERE d.SchemaID='SD002' AND r.OrderDate= 25, 26, 31
 
 Apabila pelanggan mau order Paket 3D2N selain tanggal 25, 26, dan 31 Desember;
 SELECT * FROM D2NPackage
